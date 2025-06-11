@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css bootstrap  -->
+  <link rel="stylesheet" href="asstes/css/bootstrap.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="asstes/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm custom-navbar">
+    <div class="container">
+      <div class="d-flex d-lg-none w-100 position-relative align-items-center">
+        <button class="navbar-toggler position-absolute start-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapseContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="mx-auto d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <div class="d-flex align-items-center">
+              <img src="asstes/img/Header.png" alt="Logo" width="40" class="me-2 custom-hide-below-574">
+              <span class="fw-bold fs-4">Logo</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="position-absolute end-0">
+          <a href="#" class="text-dark text-decoration-none">
+            <i class="fa-regular fa-heart fs-5 pe-2"></i>
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop Header -->
+      <div class="d-none d-lg-flex w-100 align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand me-4" href="#">
+          <div class="d-flex align-items-center">
+            <img src="asstes/img/Header.png" alt="Logo" width="40" class="me-2">
+            <span class="fw-bold fs-4">Logo</span>
+          </div>
+        </a>
+
+        <!-- Search Bar -->
+        <form class="d-flex flex-grow-1 mx-4">
+          <select class="form-select me-2" style="width: 180px;">
+            <option>All Categories</option>
+            <option>Fruits</option>
+            <option>Vegetables</option>
+          </select>
+          <input class="form-control" type="search" placeholder="Search for products...">
+          <button class="btn btn-outline-success ms-2" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!-- Right Side Items -->
+        <div class="d-flex align-items-center gap-4 ms-auto">
+          <a href="#" class="text-dark text-decoration-none">
+            <i class="fa-regular fa-heart fs-5"></i>
+            <span class="ms-1">Wishlist</span>
+          </a>
+          <a href="#" class="text-dark text-decoration-none">
+            <i class="fa-solid fa-cart-shopping fs-5"></i>
+            <span class="ms-1">Cart</span>
+          </a>
+          <button class="btn btn-light border rounded-pill px-3 d-flex align-items-center">
+            <i class="fa-solid fa-location-dot me-2 text-success"></i>
+            <span>Location</span>
+          </button>
+          <a href="#" class="text-dark text-decoration-none">
+            <i class="fa-regular fa-user fs-5"></i>
+            <span class="ms-1">Account</span>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <section class="custom-block-below-574 d-none d-sm-block d-md-none
+">
+    <div class="container">
+      <h2 class="fw-bold py-3">Featured Categories</h2>
+      <div class="nav-section">
+        <ul class="list-unstyled d-flex flex-wrap">
+          <li class="pe-5">Cake & Milk</li>
+          <li class="pe-5">Coffees & Teas</li>
+          <li class="text-success pe-5">Pet Foods</li>
+          <li class="pe-5 pt-2">Vegetables</li>
+        </ul>
+      </div>
+      <div class="row pt-3">
+        <div class="col-sm-6">
+          <div class="item">
+            <div class="d-flex gap-4 justify-content-center">
+              <img src="asstes/img/Background+Border.png" alt="" class="w-100">
+              <img src="asstes/img/Background+Border2.png" alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-block-below-574 d-none d-sm-block d-md-none">
+      <div class="container">
+        <h2 class="fw-bold py-3">Popular Products</h2>
+        <div class="nav-section">
+          <ul class="list-unstyled d-flex flex-wrap align-items-center">
+            <li class="pe-4 text-success">All</li>
+            <li class="pe-4">Milk&Dairies</li>
+            <li class=" pe-4">Coffes&Teas</li>
+            <li class="pe-4 ">PetsFoods</li>
+            <li class="pe-4 ">Meats</li>
+            <li class="pe-4">Vegetables</li>
+            <li class="pe-4 ">fruits</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <!-- Navbar 2 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white py-3 shadow-sm custom-hide-below-574">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <button class="btn btn-success me-3">
+          <i class="fa-solid fa-square pe-2"></i>
+          <span>সব ক্যাটেগরি ব্রাউজ করুন</span>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto ms-5">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" href="#">অফার</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="#">হোম</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">দোকান</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              বিক্রেতা
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">দোকান</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              বিক্রেতা
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">দোকান</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex align-items-center testq">
+        <i class="fa-solid fa-headphones fs-1"></i>
+        <div class=" ms-4 d-flex flex-column">
+          <span class="text-success fw-bold">হেল্পলাইন</span>
+          <span class="mb-0 text-muted">24/7 Support Center</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <main>
+    <section id="hero" class="custom-hide-below-574">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="outer-carousel py-2">
+                <div class="inner ">
+                  <div class="container">
+                    <h1 class="fw-bold text-secondary">"অবিশ্বাস্য গ্রোসারি <br>ডিল মিস করবেন না"</h1>
+                    <p class="lead text-muted">Sign up for the daily newsletter</p>
+                    <div class="newsletter-group">
+                      <input type="email" class="form-control newsletter-input" placeholder="Your email address">
+                      <button class="btn btn-success newsletter-btn" type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="outer-carousel py-2">
+                <div class="inner ">
+                  <div class="container">
+                    <h1 class="fw-bold text-secondary">"অবিশ্বাস্য গ্রোসারি <br>ডিল মিস করবেন না"</h1>
+                    <p class="lead text-muted">Sign up for the daily newsletter</p>
+                    <div class="newsletter-group">
+                      <input type="email" class="form-control newsletter-input" placeholder="Your email address">
+                      <button class="btn btn-success newsletter-btn" type="submit">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="py-4">
+      <div class="container custom-hide-below-574">
+        <div class="row align-items-center">
+          <div class="col-lg-10 mx-auto">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+              <h4 class="mb-0 fw-bold head">জনপ্রিয় প্রোডাক্ট</h4>
+              <ul class="d-flex list-unstyled mb-0 ms-auto">
+                <li class="px-3 text-success fw-bold">সমস্ত</li>
+                <li class="px-3">দুধ এবং দই</li>
+                <li class="px-3">কফি ও চা</li>
+                <li class="px-3">শাকসবজি</li>
+                <li class="px-3">ফলমূল</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container my-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-2 mb-4     d-sm-none d-md-block  custom-hide-below-574">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title border-bottom pb-2 newP">New products</h5>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3">
+                  <img src="asstes/img/thumbnail-3.jpg.png" alt="Juice" class="rounded me-2" width="40">
+                  <div>
+                    <div class="fw-bold text-success">আমের জুস</div>
+                    <div class="small">$99.50 <span class="text-warning">&#9733;</span></div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <img src="asstes/img/thumbnail-4.jpg.png" alt="Banana" class="rounded me-2" width="40">
+                  <div>
+                    <div class="fw-bold text-success">পাকা কলা</div>
+                    <div class="small">$89.50 <span class="text-warning">&#9733;</span></div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <img src="asstes/img/thumbnail-5.jpg.png" alt="Guava" class="rounded me-2" width="40">
+                  <div>
+                    <div class="fw-bold text-success">অমরুদ</div>
+                    <div class="small">$25 <span class="text-warning">&#9733;</span></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-10">
+          <div class="mb-4">
+
+            <div class="row g-3">
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+
+                  <img src="asstes/img/Link → product-1-1.jpg.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container-2.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container-3.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container-4.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container-5.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12 custom-block-below-574 	d-none d-sm-block d-md-none">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/Container-4.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 sm-12 custom-block-below-574 	d-none d-sm-block d-md-none">
+                <div class="card h-100 shadow-sm position-relative">
+
+                  <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                  <img src="asstes/img/product-5-1.jpg.png" class="card-img-top" alt="Product">
+                  <div class="card-body p-2">
+                    <div class="small text-muted">Snack</div>
+                    <div class="fw-bold">Seeds of Change Organic Quinoa</div>
+                    <div class="text-warning small">&#9733; 4.0</div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                      <span class="fw-bold text-success ">$28.85</span>
+                      <span class="text-muted text-decoration-line-through small">$32.8</span>
+
+                      <button class="btn btn-outline-success btn-sm mt-2 ps-2 ms-"><i
+                          class="fa-solid fa-cart-shopping"></i> Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- this section will display only in small screen so don't tb3bs feeeeh  ever never absolutley 🤣 -->
+
+              <section class="	d-none d-sm-block d-md-none   custom-block-below-574">
+                <div class="container">
+                  <h2 class="fw-bold py-3 text-secondary">Daily Best Sells</h2>
+                  <div class="nav-section">
+                    <ul class="list-unstyled d-flex flex-wrap align-items-center">
+                      <li class="pe-4 text-success">Featured</li>
+                      <li class="pe-4">Popular</li>
+                      <li class=" pe-4">New added</li>
+
+                    </ul>
+                  </div>
+
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="card text-left">
+                          <img class="card-img-top" src="asstes/img/Container-3.png" alt="">
+                              <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                          <div class="card-body">
+                            <span class="text-secondary">Hodo Foods</span>
+                            <h4 class="card-title">Angie's Boomchickapop Sweet and womnies</h4>
+                            <div class="text-warning fs-4">★</div>
+                            <p class="card-text text-success">$238.85
+                              <span class="text-decoration-line-through text-secondary">$245.8</span>
+                            </p>
+                 <div class="custom-progress">
+  <div class="custom-progress__bar custom-progress__bar--success"></div>
+  <div class="custom-progress__bar custom-progress__bar--secondary"></div>
+</div>
+                            <p class="text-secondary pt-2">Sold: 90/120</p>
+                            <button class="btn btn-success w-100 py-2">
+                              <i class="fa-solid fa-cart-shopping fs-5"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="card text-left">
+                              <span class="badge  bg-danger position-absolute top-0 start-0 ">Hot</span>
+                          <img class="card-img-top" src="asstes/img/Container-4.png" alt="">
+                          <div class="card-body">
+                            <span class="text-success">Different Brand</span>
+                            <h4 class="card-title">Another Product</h4>
+                            <div class="text-warning fs-4">★ ★ ★ ★</div>
+                            <p class="card-text text-success">$199.99
+                              <span class="text-decoration-line-through text-secondary">$220.00</span>
+                            </p>
+                                  <div class="custom-progress">
+  <div class="custom-progress__bar custom-progress__bar--success"></div>
+  <div class="custom-progress__bar custom-progress__bar--secondary"></div>
+</div>
+                            <p class="text-secondary pt-2">Sold: 60/100</p>
+                            <button class="btn btn-success w-100 py-2">
+                              <i class="fa-solid fa-cart-shopping fs-5"></i>
+                              Add to cart
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                      data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-secondary rounded-circle p-2"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button> <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-secondary rounded-circle p-2"
+                        aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+              </section>
+
+
+
+            </div>
+
+            <!-- Deals Of The Day -->
+<section class="d-none d-sm-block d-md-none custom-block-below-574 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 d-flex justify-content-center">
+        <div class="item position-relative">
+          <div class="item__img mb-3">
+            <img src="asstes/img/banner-5.png.png" class=" rounded-4 img-fluid"   alt="">
+          </div>
+          
+          <div class="caption border p-4 rounded-3 ">
+            <h4 class="mb-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h4>
+            <div class="text-warning small mb-2">★ 4.0</div>
+            <p class="mb-3">By <span class="text-success">NestFood</span></p>      
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">$28.85</span>
+              <span class="text-muted text-decoration-line-through small">$32.8</span>
+              <button class="btn btn-outline-success btn-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Add
+              </button>
+            </div>
+          </div>
+
+          <div class="time d-flex w-100 justify-content-center position-absolute  p-2 rounded-bottom-4 text-success" >
+            <div class="dayes d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded" >
+              <span class="fw-bold">212</span>
+              <span class="small text-muted">Days</span>
+            </div>
+            <div class="hours d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded">
+              <span class="fw-bold">15</span>
+              <span class="small text-muted">Hours</span>
+            </div>
+
+            <div class="minute d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded  ">
+              <span class="fw-bold ">15</span>
+              <span class="small text-muted">Minutes</span>
+            </div>
+            <div class="sec d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded ">
+              <span class="fw-bold">185</span>
+              <span class="small text-muted">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 d-flex justify-content-center secon-div">
+        <div class="item position-relative">
+          <div class="item__img mb-3">
+            <img src="asstes/img/Containerfd.png" class=" rounded-4 img-fluid"   alt="">
+          </div>
+          
+          <div class="caption border p-4 rounded-3 ">
+            <h4 class="mb-2">Seeds of Change Organic Quinoa, Brown, & Red Rice</h4>
+            <div class="text-warning small mb-2">★ 4.0</div>
+            <p class="mb-3">By <span class="text-success">NestFood</span></p>      
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="fw-bold text-success">$28.85</span>
+              <span class="text-muted text-decoration-line-through small">$32.8</span>
+              <button class="btn btn-outline-success btn-sm">
+                <i class="fa-solid fa-cart-shopping"></i> Add
+              </button>
+            </div>
+          </div>
+
+          <div class="time d-flex w-100 justify-content-center position-absolute  p-2 rounded-bottom-4  text-success" >
+            <div class="dayes d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded " >
+              <span class="fw-bold">212</span>
+              <span class="small text-muted">Days</span>
+            </div>
+            <div class="hours d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded">
+              <span class="fw-bold">15</span>
+              <span class="small text-muted">Hours</span>
+            </div>
+
+            <div class="minute d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded  ">
+              <span class="fw-bold ">15</span>
+              <span class="small text-muted">Minutes</span>
+            </div>
+            <div class="sec d-flex flex-column  align-items-center px-3 py-2 bg-white  rounded ">
+              <span class="fw-bold">185</span>
+              <span class="small text-muted">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Top selling At the mobile screen -->
+ <section class=" d-none d-sm-block d-md-none custom-block-below-574 pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="innerSelling">
+                 <div class="card-body">
+              <h5 class="card-title border-bottom py-1 Top_Selling ">Top Selling</h5>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3 pt-4">
+                  <img src="asstes/img/thumbnail-1.jpg.png" alt="Juice" class="rounded me-2" >
+                  <div>
+                    <div class="fw-bold ">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                    <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <img src="asstes/img/thumbnail-4.jpg.png" alt="Banana" class="rounded me-2" >
+                  <div>
+                    <div class="fw-bold">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                        <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <img src="asstes/img/thumbnail-5.jpg.png" alt="Guava" class="rounded me-2">
+                  <div>
+                    <div class="fw-bold ">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                         <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+      <div class="col-sm-12 pt-5">
+        <div class="innerSelling">
+                 <div class="card-body">
+              <h5 class="card-title border-bottom py-1 Top_Selling ">Trending Products</h5>
+              <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-3 pt-4">
+                  <img src="asstes/img/thumbnail-1.jpg.png" alt="Juice" class="rounded me-2" >
+                  <div>
+                    <div class="fw-bold ">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                    <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <img src="asstes/img/thumbnail-3.jpg.png" alt="Banana" class="rounded me-2" >
+                  <div>
+                    <div class="fw-bold">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                        <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <img src="asstes/img/thumbnail-6.jpg.png" alt="Guava" class="rounded me-2">
+                  <div>
+                    <div class="fw-bold ">Nestle Original Coffee-Mate Coffee
+Creamer</div>
+                         <div class="small text-success">$99.50 <span class="text-secondary text-decoration-line-through">$33.8</span></div>
+                  </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+            <!-- Promo Banners -->
+            <div class="row g-3 m-5 ">
+              <div class="col-md-4 d-sm-none d-md-block  custom-hide-below-574 ">
+                <div class="p-4 rounded  d-flex flex-column justify-content-center position-relative ">
+                  <div class="banners__img ">
+                  <img src="asstes/img/banner-3.png.png" alt="">
+                  </div>
+                  <div class="promo__caption position-absolute">
+                  <h5 class="p-5">Everyday Fresh & Clean with Our Products</h5>
+                  <button class="btn btn-success btn-sm mt-2 ms-5">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-sm-none d-md-block  custom-hide-below-574 ">
+                <div class="p-4 rounded  d-flex flex-column justify-content-center position-relative ">
+                  <div class="banners__img ">
+                  <img src="asstes/img/banner-2.png.png" alt="">
+                  </div>
+                  <div class="promo__caption position-absolute">
+                  <h5 class="p-5">Everyday Fresh & Clean with Our Products</h5>
+                  <button class="btn btn-success btn-sm mt-2 ms-5">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-sm-none d-md-block  custom-hide-below-574 ">
+                <div class="p-4 rounded  d-flex flex-column justify-content-center position-relative ">
+                  <div class="banners__img ">
+                  <img src="asstes/img/banner-1.png.png" alt="">
+                  </div>
+                  <div class="promo__caption position-absolute">
+                  <h5 class="p-5">Everyday Fresh & Clean with Our Products</h5>
+                  <button class="btn btn-success btn-sm mt-2 ms-5">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+      
+      
+
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="p-5 rounded bg-success bg-opacity-10 shadow-sm  position-relative">
+              <div class="newsletter__img2 position-absolute bottom-0 end-0 w-25 bg-transparent ">
+                <img src="asstes/img/banner-9.png.png" class="w-100 bg-transparent" alt="">
+              </div>
+              <h2 class="fw-bold mb-3">Stay home & get your daily needs from our shop</h2>
+              <p class="mb-4">Start You'R Daily Shopping with <span class="text-success fw-bold">Nest Mart</span></p>
+              <form class="row justify-content-start
+         g-2">
+                <div class="col-md-4">
+                  <div class="newsletter-group">
+                    <input type="email" class="form-control newsletter-input" placeholder="Your email address">
+                    <button class="btn btn-success newsletter-btn" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- offter show only in small screeen -->
+ <section class="  d-none d-sm-block d-md-none custom-block-below-574 pt-5">
+<div class="container">
+  <div class="row g-3">
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-1.svg fill.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-2.svg.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-3.svg fill.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-4.svg fill.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-5.svg.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="offers d-flex   p-4 rounded-4">
+        <div class="offers__img ">
+          <img src="asstes/img/icon-6.svg.png" alt="">
+        </div>
+        <div class="offers__caption d-flex flex-column align-items-center w-100 ">
+          <h4 class=""> Best prices & offers</h4>
+          <span class="text-secondary">Orders $50 or more</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ </section>
+
+
+
+
+  </main>
+
+
+  <footer class="bg-white border-top pt-5 pb-3 position-relative">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- Logo & Info -->
+        <div class="col-md-4 col-lg-3">
+          <div class="mb-3 d-flex align-items-center">
+            <img src="asstes/img/Header.png" alt="Logo" width="48" class="me-2">
+            <span class="fs-4 fw-bold text-dark d-sm-none d-md-block custom-hide-below-574">Logo</span>
+            <span class="fs-4 fw-bold text-success fw-bolder d-none d-sm-block d-md-none custom-block-below-574
+">Nest</span>
+          </div>
+          <p class="text-muted small mb-2">Awesome grocery store website template</p>
+          <ul class="list-unstyled text-muted small">
+            <li class="mb-1"><i class="fa-solid fa-location-dot text-success me-2"></i> Address: 5171 W Campbell Ave
+              undefined Kent, Utah 53127 United States</li>
+            <li class="mb-1"><i class="fa-solid fa-phone text-success me-2"></i> Call Us:(+91) - 540-025-124553</li>
+            <li class="mb-1"><i class="fa-solid fa-envelope text-success me-2"></i> Email:sale@Nest.com</li>
+            <li><i class="fa-solid fa-clock text-success me-2"></i> Hours:10:00 -18:00, Mon - Sat</li>
+          </ul>
+        </div>
+        <!-- Company -->
+        <div class="col-6 col-md-2 col-lg-1">
+          <h6 class="fw-bold mb-3">Company</h6>
+          <ul class="list-unstyled text-muted small">
+            <li><a href="#" class="text-decoration-none text-dark">About Us</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Delivery Information</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Terms & Conditions</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Contact Us</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Support Center</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Careers</a></li>
+          </ul>
+        </div>
+        <!-- Account -->
+        <div class="col-6 col-md-2 col-lg-1">
+          <h6 class="fw-bold mb-3">Account</h6>
+          <ul class="list-unstyled text-muted small">
+            <li><a href="#" class="text-decoration-none text-dark">Sign In</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">View Cart</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">My Wishlist</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Track My Order</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Help Ticket</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Shipping Details</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Compare products</a></li>
+          </ul>
+        </div>
+        <!-- Corporate -->
+        <div class="col-6 col-md-2 col-lg-2">
+          <h6 class="fw-bold mb-3">Corporate</h6>
+          <ul class="list-unstyled text-muted small">
+            <li><a href="#" class="text-decoration-none text-dark">Become a Vendor</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Affiliate Program</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Farm Business</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Farm Careers</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Our Suppliers</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Accessibility</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Promotions</a></li>
+          </ul>
+        </div>
+        <!-- Popular -->
+        <div class="col-6 col-md-2 col-lg-2">
+          <h6 class="fw-bold mb-3">Popular</h6>
+          <ul class="list-unstyled text-muted small">
+            <li><a href="#" class="text-decoration-none text-dark">Milk & Flavoured Milk</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Butter and Margarine</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Eggs Substitutes</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Marmalades</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Sour Cream and Dips</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Tea & Kombucha</a></li>
+            <li><a href="#" class="text-decoration-none text-dark">Cheese</a></li>
+          </ul>
+        </div>
+        <!-- Install App & Social -->
+        <div class="col-md-4 col-lg-3">
+          <h6 class="fw-bold mb-3">Install App</h6>
+          <div class="mb-2">
+            <a href="#"><img src="asstes/img/Link → app-store.jpg.png" alt="App Store" width="120" class="me-2"></a>
+            <a href="#"><img src="asstes/img/Link → google-play.jpg.png" alt="Google Play" width="120"></a>
+          </div>
+          <div class="text-muted small mb-2">Secured Payment Gateways</div>
+          <div class="secure__img border-bottom pb-3">
+            <img src="asstes/img/payment-method.png.png" alt="">
+          </div>
+ 
+          <div class="mb-2 d-sm-none d-md-block custom-hide-below-574">
+            <span class="fw-bold">Follow Us</span>
+            <a href="#" class="text-success ms-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-success ms-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-success ms-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-success ms-2"><i class="fab fa-pinterest"></i></a>
+            <a href="#" class="text-success ms-2"><i class="fab fa-youtube"></i></a>
+          </div>
+          <div class="text-muted small d-sm-none d-md-block custom-hide-below-574">Up to 15% discount on your first subscribe</div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-muted small">
+          © 2022, <a href="#" class="text-success text-decoration-none">Nest</a> - HTML Ecommerce Template<br>
+          All rights reserved
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0 d-sm-none d-md-block custom-hide-below-574">
+          <span class="me-4 text-success fw-bold"><i class="fa-solid fa-phone-volume me-2"></i>2122020 <span
+              class="text-muted fw-normal">Working 8:00 - 22:00</span></span>
+          <span class="text-success fw-bold"><i class="fa-solid fa-phone-volume me-2"></i>542124500 <span
+              class="text-muted fw-normal">24/7 Support Center</span></span>
+        </div>
+      </div>
+    </div>
+             <i class="fa-solid fa-arrow-up position-absolute bottom-0 end-0 m-4  last_thing  p-2 "></i>
+  </footer>
+
+    <script src="asstes/js/bootstrap.bundle.min.js"></script>
+  <script src="asstes/js/script.js"></script>
+
+</body>
+
+</html>
