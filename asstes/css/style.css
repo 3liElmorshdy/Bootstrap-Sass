@@ -45,7 +45,7 @@ body {
 
 .outer-carousel {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .inner {
@@ -154,10 +154,6 @@ body {
   width: 25%;
 }
 
-.head {
-  padding-left: 250px;
-}
-
 .item {
   position: relative;
   padding-bottom: 150px;
@@ -167,7 +163,7 @@ body {
   position: absolute;
   top: 20%;
   display: flex;
-  gap: 16px;
+  gap: 5px;
 }
 
 .offers {
@@ -190,6 +186,70 @@ body {
   height: 2px;
   width: 65px;
   background-color: #3BB77E;
+}
+
+.firstSection {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: white;
+}
+.firstSection li {
+  border: 1px solid #eee;
+  transition: transform 0.2s ease;
+}
+.firstSection li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.span-caousi {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #28a745;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.banner-container {
+  background-image: url(../img/banner-3.png.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.first-promo {
+  background-image: url(../img/banner-3.png.png);
+}
+
+.img-third-promo {
+  background-image: url(../img/banner-1.png.png);
+}
+
+.img-second-promo {
+  background-image: url(../img/banner-2.png.png);
+}
+
+.promo__caption {
+  position: relative;
+  z-index: 2;
+  color: white;
 }
 
 .last_thing {
@@ -246,4 +306,33 @@ footer hr {
   .custom-block-below-574 {
     display: block !important;
   }
+}
+@media (min-width: 992px) {
+  .col-lg-5th {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+.product-card {
+  transition: transform 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 15px;
+}
+
+.category-tabs li {
+  cursor: pointer;
+}
+.category-tabs li:hover {
+  color: #3BB77E !important;
 }/*# sourceMappingURL=style.css.map */
